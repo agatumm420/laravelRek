@@ -20,8 +20,11 @@ class Login extends Component
         session()->flash('error', 'Invalid credentials');
     }
 
-    public function render()
+
+        public function render()
     {
-        return view('livewire.login');
+        return view('livewire.login')->layout('layouts.app.blade.php');
+
+
     }
 }
