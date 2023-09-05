@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Home;
 use App\Livewire\Login;
+use App\Livewire\Register;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,7 @@ Route::get('/', function () {
 
 Route::get('/login', Login::class)->name('login');
 Route::get('/home', Home::class)->middleware(['auth'])->name('home');
+
+
+Route::get('/register', Register::class);
+
